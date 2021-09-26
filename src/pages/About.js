@@ -2,25 +2,25 @@ import React from "react";
 import about from "../images/about.jpg";
 import mission from "../images/mission.gif";
 import operations from "../images/operations.jpg";
-import "./About.css";
+//import "./About.css";
+import styled from "styled-components";
 
 function About() {
   return (
-    <div className="about-content-wrapper" id="about-content-wrapper">
+    <AboutWrapper className="div">
       <div className="about-img">
         <img src={about} className="about" alt="laptop" />
       </div>
       <div className="about-txt">
         <h1 className="about-title">
-           About Us
-           <Hr color="green" />
+          About Us
+          <Hr color="green" />
         </h1>
         <p>
           Arrival entered an if drawing request. How daughters not promotion few
           knowledge contented. Yet winter law behind number stairs garret
           excuse. Minuter we natural conduct gravity if pointed oh no. Am
-          immediate unwilling of attempted admitting disposing it. Handsome
-          opinions on am at it ladyship.
+          immediate unwilling of attempted admitting disposing it.
         </p>
         <p>
           Sussex result matter any end see. It speedily me addition weddings
@@ -31,8 +31,8 @@ function About() {
       <div className="mission-txt">
         <h1 className="about-title">
           Our Mission
+          <Hr color="green" />
         </h1>
-        <hr />
         <p>
           Promotion an ourselves up otherwise my. High what each snug rich far
           yet easy. In companions inhabiting mr principles at insensible do.
@@ -53,8 +53,8 @@ function About() {
       <div className="operations-txt">
         <h1 className="about-title">
           Operations
+          <Hr color="green" />
         </h1>
-        <hr />
         <p>
           In up so discovery my middleton eagerness dejection explained.
           Estimating excellence ye contrasted insensible as. Oh up unsatiable
@@ -65,7 +65,7 @@ function About() {
           Collected few extremity suffering met had sportsman.
         </p>
       </div>
-    </div>
+    </AboutWrapper>
   );
 }
 
@@ -73,11 +73,54 @@ export default About;
 
 const Hr = ({ color }) => (
   <hr
-      style={{
-          color: color,
-          //backgroundColor: color,
-          height: 5,
-          width:"20%"
-      }}
+    style={{
+      color: color,
+      height: 5,
+      width: "20%",
+    }}
   />
 );
+
+const AboutWrapper = styled.div`
+  display: grid;
+  margin: 3rem 10rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 3rem;
+  font-size: 1.2rem;
+  width: auto;
+
+  h1 {
+    color: black;
+  }
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 45vh;
+    width: 100vw;
+    border-radius: 5rem;
+    animation: bounce 1s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+  }
+  .about-txt,
+  .mission-txt,
+  .operations-txt {
+    animation: bounce 2s;
+  }
+  @keyframes bounce {
+    0% {
+      transform: translateY(-50px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @media (max-width: 850px) {
+    margin: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+`;

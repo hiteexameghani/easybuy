@@ -1,12 +1,8 @@
 import React from 'react';
-//import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-//import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css"
-import Card from "../Cards/Cards"
-function Products() {
+import Cards from "../Product_Cards/Cards"
+export default function Products() {
   return (
-    <Card />
+    <Cards />
   );
 }
-
-export default Products;
