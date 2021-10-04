@@ -10,12 +10,9 @@ class CartService {
   create(cart,key) {
     db = firebase.ref(`/ucart/cart/${key}`);
     let data = db.set(cart);
-    db = firebase.ref(`/ucart/cart/`);
     return data;
   }
-  getSingleProduct(key) {
-    return db;
-  }
+  
   update(key, value) { 
     return db.child(key).update(value);
   }

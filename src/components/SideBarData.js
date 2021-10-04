@@ -23,7 +23,7 @@ export const SidebarData = [
       icon: <FaIcons.FaCartPlus />,
     },
     {
-      title: 'Contact',
+      title: 'Contact Us',
       path: '/contact',
       icon: <FaIcons.FaAddressCard />,
       },

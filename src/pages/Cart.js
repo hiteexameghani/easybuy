@@ -2,9 +2,6 @@ import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import CartService from "./CartService";
 import cart from "../images/cart.png";
-//import styled from "styled-components";
-
-//import img1 from "../images/img1.jpg"
 
 class Cart extends Component {
   constructor(props) {
@@ -89,7 +86,7 @@ class Cart extends Component {
             className="cardy col-md-12 text-center p-5 container-fluid"
             style={{ height: "700px" }}
           >
-            <table className="table table-success" style={{ width: "100%" }}>
+            <table className="table" style={{ maxWidth: "100%" }}>
               <thead>
                 <tr>
                   <th>No</th>

@@ -20,7 +20,7 @@ class Product2 extends Component {
         };
 
         CartService.update("product2", data2)
-          .then(() => {
+          .then(() => { 
             alert("Cart updated");
             window.location.reload();
           })

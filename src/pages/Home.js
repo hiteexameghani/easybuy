@@ -22,7 +22,7 @@ export default function Home() {
         <hr />
       </div>
       <div className="featured-products-wrapper">
-        <div className="featured-img-grid">
+        <div className="featured-img-grid mx-auto">
           <Link to="/product3" className="product-container">
             <img src={img3} alt="product3" />
             <div className="product-name">

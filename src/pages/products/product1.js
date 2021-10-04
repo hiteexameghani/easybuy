@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import CartService from "../CartService";
-import "./styles.css"
-import img1 from "../../images/img1.jpg"
+import "./styles.css";
+import img1 from "../../images/img1.jpg";
 
 class Product1 extends Component {
   addToCart() {
@@ -25,7 +25,7 @@ class Product1 extends Component {
             alert("Cart updated");
             window.location.reload();
           })
-          .catch((e) => { 
+          .catch((e) => {
             console.log(e);
           });
       } else {

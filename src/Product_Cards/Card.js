@@ -7,9 +7,9 @@ const Card = (props) => {
       <div className="img-container">
         <img src={props.imgsrc} alt="img1" className="card-img-top"/>
       </div>
-      <div className="card-body d-flex justify-content-between">
+      <div className="card-body d-flex flex-column justify-content-between text-center">
         <p className="mb-0 text-black">{props.name}</p>
-        <h4 className="mb-0" style={{color:"green", fontWeight:"bolder"}}>{props.price}</h4>
+        <h4 className="mb-0" style={{color:"#03775e", fontWeight:"bolder"}}>{props.price}</h4>
       </div>
     </div>
   );
