@@ -10,16 +10,16 @@ class Product6 extends Component {
       const data = snapshot.val();
       if (
         data != null &&
-        (data["product5"] !== undefined || data["product5"] != null)
+        (data["product6"] !== undefined || data["product6"] != null)
       ) {
         let data2 = {
           name: "Dell Inspiration 15 2-in-1 Laptop",
           tag: "assets/images_/img6.jpg",
           price: 900,
-          inCart: data["product5"]["inCart"] + 1,
+          inCart: data["product6"]["inCart"] + 1,
         };
 
-        CartService.update("product5", data2)
+        CartService.update("product6", data2)
           .then(() => {
             alert("Cart updated");
             window.location.reload();
