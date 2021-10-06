@@ -58,7 +58,7 @@ class Cart extends Component {
         {totalLength === 0 && (
           <div
             className="col-md-12 text-center p-5 container-fluid"
-            style={{ height: "700px" }}
+            style={{ height: "900px" }}
           >
             <br />
             <center>
@@ -84,7 +84,7 @@ class Cart extends Component {
         {totalLength !== 0 && names && (
           <div
             className="cardy col-md-12 text-center p-5 container-fluid"
-            style={{ height: "100%" }}
+            style={{ height: "900px" }}
           >
             <table className="table" style={{ maxWidth: "100%"}}>
               <thead>
