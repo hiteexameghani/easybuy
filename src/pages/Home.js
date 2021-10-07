@@ -63,7 +63,7 @@ const HomeWrapper = styled.div`
   background-attachment: fixed;
   background-size: cover;
   height: 500px;
-  opacity: 0.9;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,7 +128,7 @@ const HomeWrapper = styled.div`
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
   height: 18rem;
-  background: white;
+  
 }
 .product-container span {
   color: var(--theme-color);

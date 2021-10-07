@@ -1,6 +1,6 @@
 import React from "react";
 import about from "../images/about.jpg";
-import mission from "../images/mission.gif";
+import mission from "../images/mission.jpg";
 import operations from "../images/operations.jpg";
 //import "./About.css";
 import styled from "styled-components";
@@ -99,7 +99,7 @@ const AboutWrapper = styled.div`
     object-fit: cover;
     height: 45vh;
     width: 100vw;
-    border-radius: 5rem;
+    border-radius: 1rem;
     animation: bounce 1s;
     animation-direction: alternate;
     animation-iteration-count: 1;
