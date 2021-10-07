@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import React, { Component } from "react";
 import CartService from "./CartService";
 import cart from "../images/cart.png";
+import "../App.css";
 
 class Cart extends Component {
   constructor(props) {
@@ -84,16 +85,15 @@ class Cart extends Component {
         {totalLength !== 0 && names && (
           <div
             className="cardy col-md-12 text-center p-5 container-fluid"
-            style={{ height: "900px" }}
+            style={{ minHeight: "900px" }}
           >
-            <table className="table" style={{ maxWidth: "100%"}}>
+            <table className="table" style={{ maxWidth: "100%" }}>
               <thead>
                 <tr>
-                  <th>No</th>
+                  <th>Image</th>
                   <th>Product</th>
                   <th>Price</th>
                   <th>Quantity</th>
-                  <th>Image</th>
                   <th>Total</th>
                   <th>Operation</th>
                 </tr>
@@ -103,13 +103,16 @@ class Cart extends Component {
                 {names &&
                   names.map((item, index) => (
                     <tr>
-                      <td>{index + 1}</td>
+                      <td>
+                        <img
+                          src={item.tag}
+                          alt="device img"
+                          style={{ height: "80px" }}
+                        />
+                      </td>
                       <td>{item.name}</td>
                       <td>${item.price}</td>
                       <td>{item.inCart}</td>
-                      <td>
-                        <img src={item.tag} alt="device img"  style={{height:"80px"}}/>
-                      </td>
                       <td>${item.price * item.inCart}</td>
                       <td>
                         <button

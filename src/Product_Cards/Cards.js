@@ -15,6 +15,7 @@ class Cards extends Component {
   render() {
     return (
       <div className="container">
+        <h1 class="row justify-content-center mb-4"> Our Products</h1>
         <div className="row py-4 mx-auto">
           <Link to="/product1" className="col-md">
             <Card imgsrc={img1} name={"iPhone 12 64GB Green"} price={"$849"} />
@@ -27,13 +28,13 @@ class Cards extends Component {
           </Link>
         </div>
         <div className="row pb-4 mx-auto">
-          <Link to="/product4"  className="col-md-4">
+          <Link to="/product4"  className="col-md">
             <Card imgsrc={img4} name={"Macbook Air"} price={"$1619"}/>
           </Link>
-          <Link to="/product5"  className="col-md-4">
+          <Link to="/product5"  className="col-md">
             <Card imgsrc={img5} name={"Alianware x15"} price={"$1800"}/>
           </Link>
-          <Link to="/product6"  className="col-md-4">
+          <Link to="/product6"  className="col-md">
             <Card imgsrc={img6} name={"Dell Inspiration 2-in-1 Laptop"} price={"$900"}/>
           </Link>
         </div>  
