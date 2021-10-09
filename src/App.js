@@ -25,17 +25,17 @@ function App() {
         <Navbar />
 
         <Route exact path="/" component={Home} />
-        <Route exact path="/about" component={About} />
-        <Route exact path="/cart" component={Cart} />
-        <Route exact path="/contact" component={Contact} />
-        <Route exact path="/products" component={Products} />
-        <Route exact path="/product1" component={Product1} />
-        <Route exact path="/product2" component={Product2} />
-        <Route exact path="/product3" component={Product3} />
-        <Route exact path="/product4" component={Product4} />
-        <Route exact path="/product5" component={Product5} />
-        <Route exact path="/product6" component={Product6} />
-        <Route exact path="/product7" component={Product7} />
+        <Route path="/about" component={About} />
+        <Route path="/cart" component={Cart} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/products" component={Products} />
+        <Route path="/product1" component={Product1} />
+        <Route path="/product2" component={Product2} />
+        <Route path="/product3" component={Product3} />
+        <Route path="/product4" component={Product4} />
+        <Route path="/product5" component={Product5} />
+        <Route path="/product6" component={Product6} />
+        <Route path="/product7" component={Product7} />
 
         <Footer />
       </div>

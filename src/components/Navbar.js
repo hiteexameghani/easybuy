@@ -45,7 +45,9 @@ function Navbar() {
         <Link to="#" className="menu-bars">
           <FaIcons.FaBars onClick={showSidebar} />
         </Link>
-        <img src={logo} className="logo" alt="company-logo" />
+        <Link to="/">
+          <img src={logo} className="logo" alt="company-logo" />
+        </Link>
         <Link to="/cart" className="cart-icon">
           <span>
             <FaIcons.FaCartPlus />

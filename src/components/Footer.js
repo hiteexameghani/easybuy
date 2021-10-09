@@ -33,7 +33,7 @@ export default function Footer() {
 }
 
 const FooterWrapper = styled.footer`
-  background-color: #6cc2b2;
+  background-color: darkslategray;
   color: white;
   box-shadow: 0 0px 1px rgba(0, 0, 0.5, 0.1), 0 5px 4px rgba(0, 0, 0, 0.3) inset;
   display: flex;

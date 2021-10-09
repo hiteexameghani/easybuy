@@ -99,7 +99,7 @@ const AboutWrapper = styled.div`
     object-fit: cover;
     height: 45vh;
     width: 100vw;
-    border-radius: 1rem;
+ 
     animation: bounce 1s;
     animation-direction: alternate;
     animation-iteration-count: 1;
